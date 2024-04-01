@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid black;
+            width: 30%;
+            height: 150vh;
+            padding: 10px;
+        }
+        #btn{
+            background: green;
+            margin-left: 140px;
+        }
+        .span1{
+            font-size: 8px;
+            margin-left: 1px;
+        }
+        .Sumbit{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Assignment Form</h1>
+    <form action="form.html">
+        <label for="name">Employee Name:</label><br>
+        <input type="text" name="" id="FirstName" placeholder="First Name"> 
+        <input type="text" name="" id="LastName" placeholder="Last Name"><br><br>
+        
+        <label for="name">Manager Name:</label><br>
+        <input type="text" name="" id="Manager" placeholder="First Name"> 
+        <input type="text" name="" id="ManagerName" placeholder="Last Name"><br><br>
+        
+        <label for="name">Task:</label><br>
+        <input type="text" name="" id="task"> 
+        <input type="text" name="" id="task1" placeholder="ex:3"><br><br>
+        
+        <label>Status</label><br><br>
+        <input type="radio" name="type">Not Started<br>
+        <input type="radio" name="type">In Progress<br>
+        <input type="radio" name="type">Done<br>
+        <input type="radio" name="type">Awaiting Feedback<br><br>
+        
+        <label>Additional Notes:</label><br><br>
+        <textarea placeholder="Type here....." id="Address" style="height: 70px; width: 340px;"></textarea> <br><br>
+        
+        <label>Instructions</label><br><br>
+        <textarea id="Address" style="height: 50px; width: 340px;"></textarea> <br><br>
+    <button id="btn">Submit</button>
+    </form>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <script>
+    document.getElementById('taskForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+        let formData = new FormData(document.getElementById('taskForm'));
+        let formObject = {};
+        formData.forEach((value, key) => formObject[key] = value);
+        
+        console.log(formObject);
+
+        document.getElementById('taskForm').reset();
+    });
+</script> -->
